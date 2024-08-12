@@ -1,0 +1,3 @@
+[submodule "mgpusim"]
+	path = mgpusim
+	url = https://github.com/sarchlab/mgpusim.git

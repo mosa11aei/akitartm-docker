@@ -5,7 +5,12 @@ This repository contains a dockerized version of MGPUSim, and demonstrates an ex
 ## Instructions
 
 1. [Install Docker](https://docs.docker.com/get-docker/) onto your system
-2. Clone this repository. This repo includes the Dockerfile necessary to build the docker image. We have also included a copy of MGPUSim at the latest available release (v3.0.3, as of 12 AUG 2024).
+2. Clone this repository. This repo includes the Dockerfile necessary to build the docker image. We have also included a copy of MGPUSim at the latest available release (v3.0.3, as of 12 AUG 2024) as a submodule. Thus, to clone, please do:
+
+```bash
+git clone --recursive https://github.com/mosa11aei/akitartm-docker.git
+```
+
 3. With docker installed, and within this directory, run: `docker build AkitaRTMDocker .`, where `AkitaRTMDocker` is an arbitrary name for the image that will be build using docker.
 4. After building the docker image, you can use the [docker GUI](https://docs.docker.com/desktop/use-desktop/) to run a container from the image, or, through the command line:
 

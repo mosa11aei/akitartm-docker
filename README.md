@@ -15,9 +15,9 @@ git clone --recursive https://github.com/mosa11aei/akitartm-docker.git
 4. After building the docker image, you can use the [docker GUI](https://docs.docker.com/desktop/use-desktop/) to run a container from the image, or, through the command line:
 
 ```bash
-docker run AkitaRTMDocker -p 8080:33000
+docker run -p 8080:33000 akitartm
 # 8080 is arbitrary; an IP your computer can access. 
 # 33000 is a given port for AkitaRTM in the dockerfile.
 ```
 
-At this point, you are now able to access AkitaRTM, monitoring the "fir" benchmark, by going to `http://localhost:8080` (assuming that was the port you chose on the host).
+At this point, you are now able to access AkitaRTM, monitoring the "fir" benchmark, by going to `http://localhost:8080` on your local machine (assuming that was the port you chose on the host).
